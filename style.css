@@ -1,0 +1,244 @@
+body{
+    background-color: #1c1b23 ;
+    /* background-color:#ffffff ; */
+    color:rgb(51, 165, 196);
+    margin: 0;
+    padding: 0 ;
+}
+header {
+ 
+    margin: 0;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 0.8em  ;
+    background:#2d2f3d;
+    box-shadow: -15px 13px 23px -7px #0f1014;
+  
+    /* border: 1px solid red; */
+ 
+  }
+  .profile_image{
+      
+    background-repeat: no-repeat;
+    background-position: -1em;
+    /* background: #b50909; */
+    transition: all,0.8s;
+    margin:0.4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .profile_image> img{
+ 
+    border: 2px solid rgb(240, 237, 243);  
+    box-shadow: 11px 8px 22px -2px rgb(53, 14, 90);
+  }
+  h1 {
+    text-shadow: 3px 2px 10px rgb(148, 28, 223);
+    text-decoration:underline;
+    /* text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #8418ff, 0 0 30px #7244a3, 0 0 4px #9f18ff, 0 0 5px #8818ff, 0 0 5px #b618ff; */
+    /* color:rgb(126, 2, 242); */
+    color:rgb(253, 251, 255);
+    margin-left: 0.5em;
+    font-size: 4rem;
+  }
+  #status{
+    color: rgb(126, 2, 242);
+    text-align: center;
+    /* margin-left: 0.6em; */
+  }
+  
+ #description {
+    font-size: 1rem;
+
+  }
+  #about {
+    margin-top: 3em;
+    text-align: center;
+  }
+  
+  .profile_image>img {
+   
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+  #skills {
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 1px;
+    transition: all,0.3s;
+     border: 1px solid rgb(170, 0, 255 );
+    text-shadow: 0 0 10px rgb(87, 17, 251);
+    text-align: center;
+    display: inline-block;
+    padding: 0.4em;
+    color:  rgb(126, 2, 242);
+    /* background-color: rgb(146, 14, 199); */
+    border-radius: 5px;
+  
+  }
+  
+  #projects {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap:wrap ;
+    justify-content: center;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.prj_heading {
+    margin-top: 1.6em;
+    
+    text-align: center;
+    color: rgb(216, 222, 222);
+    font-size: 1.8rem;
+    text-shadow: 3px 2px 10px rgb(113, 45, 176);
+    text-decoration: underline;
+}
+
+.project {
+  transition: all,0.4s;
+    overflow:auto;
+    width: 20vmax  ;
+    height: 20em;
+    float: left;
+   margin: 1em;
+   background-color: #25252d;
+   box-shadow: -2px 2px 18px -7px rgba(0,0,0,0.64);
+    /* padding: 10px; */
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    box-sizing: content-box;
+    text-overflow: hide;
+  }
+  
+  .project h3 {
+      font-size: 1.5rem;
+    }
+    
+    .project> p {
+        
+    font-size: 1rem;
+    /* border: 1px solid red; */
+  }
+  
+  .project img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+  }
+.allskils{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap:wrap ;
+  justify-content: center;
+  text-align: center;
+}
+.skill_type{
+ 
+  transition: all,0.4s;
+  overflow:auto;
+  width: 18vmax  ;
+  height: 16em;
+  float: left;
+ margin: 1em;
+  padding: 1em;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  box-sizing:border-box;
+  /* text-overflow: hide; */
+}
+#skills h2{
+  color: rgb(86, 74, 107);
+  /* border: 1px solid gray; */
+  text-decoration:underline;
+}
+
+.socials{
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ margin-bottom: 1em;
+   
+}
+
+
+
+
+
+
+
+  /* #resume {
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  } */
+  
+  .socials > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  /* border: 1px solid red; */
+    margin: 1em;
+    color:  rgb(2, 162, 242);
+    text-shadow: 0 0 10px rgb(87, 17, 251);
+    text-decoration: none;
+  }
+  .socials > a>span{
+   margin: 0.3em;
+   font-size: 1em;
+  }
+  
+  li:hover{
+    cursor: pointer;
+    border: 1PX solid rgb(103, 214, 251);
+    box-shadow: -15px 15px 18px -5px rgba(0,0,0,0.64);
+    transform: translateY(-0.2vmax);
+    transition: all,0.3s;
+  }
+  .project:hover{
+    cursor: pointer;
+    box-shadow: -15px 15px 18px -7px rgba(0,0,0,0.64);
+    transform: translateY(-1vmax);
+    transition: all,0.4s;
+  }
+  .profile_image:hover{
+    cursor: pointer;
+    transition: all,0.8s;
+    transform: translateX(2vmax);
+  }
+  .socials a :hover{
+    cursor: pointer;
+   
+    box-shadow: -15px 15px 18px -5px rgba(0,0,0,0.64);
+    transform: translateY(-0.2vmax);
+    transition: all,0.3s;
+  }
