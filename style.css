@@ -121,9 +121,8 @@ header {
 }
 
 .project {
-  transition: all,0.4s;
-    overflow:auto;
-    width: 20vmax  ;
+  overflow:auto;
+  width: 20vmax  ;
     height: 20em;
     float: left;
    margin: 1em;
@@ -133,7 +132,10 @@ header {
     /* border: 1px solid #ccc; */
     border-radius: 5px;
     box-sizing: content-box;
-    text-overflow: hide;
+    text-overflow: hide;   
+    animation-name: scale-up-center ;
+    animation-duration: 0.9s;
+    transition: 0.4s;
   }
   
   .project h3 {
@@ -187,25 +189,6 @@ header {
  margin-bottom: 1em;
    
 }
-
-
-
-
-
-
-
-  /* #resume {
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 2rem;
-  }
-  
-  p {
-    font-size: 1.5rem;
-  } */
-  
   .socials > a {
     display: flex;
     align-items: center;
@@ -246,6 +229,11 @@ header {
     transform: translateY(-0.2vmax);
     transition: all,0.3s;
   }
+   /**
+ * ----------------------------------------
+ * media query added for skills section 
+ * ----------------------------------------
+ */
   @media (max-width: 568px){
     #skills h2{
       font-size: 1.4em;
@@ -282,12 +270,36 @@ header {
       /* border: 1px solid red; */
      } 
      .nameheading> h1{
-      margin: 0%;
+      margin: 0%;      
+      text-justify: auto;     
+      font-size: 2.1em;
       
-      text-justify: auto;
-      /* text-align: center; */
-    font-size: 2.1em;
-      /* border: 1px solid rgb(211, 191, 191); */
      }
      
   }
+ /**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+ 
