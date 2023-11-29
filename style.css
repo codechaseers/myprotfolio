@@ -133,8 +133,7 @@ header {
     border-radius: 5px;
     box-sizing: content-box;
     text-overflow: hide;   
-    animation-name: scale-up-center ;
-    animation-duration: 0.9s;
+    
     transition: 0.4s;
   }
   
@@ -282,7 +281,7 @@ header {
  * animation scale-up-center
  * ----------------------------------------
  */
-@-webkit-keyframes scale-up-center {
+/* @-webkit-keyframes scale-up-center {
   0% {
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
@@ -301,5 +300,5 @@ header {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-}
+} */
  
